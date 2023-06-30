@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 import Entypo from '@expo/vector-icons/Entypo';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 // Keep the splash screen visible while we fetch resources
 SplashScreen.preventAutoHideAsync();
@@ -46,12 +47,14 @@ export default function App() {
   }
 
   return (
-    <View
-      style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
-      onLayout={onLayoutRootView}>
-      <Text>Plant Tracer</Text>
-      <Entypo name="flower" size={30} />
-    </View>
+    <SafeAreaProvider>
+      <View
+        style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
+        onLayout={onLayoutRootView}>
+        <Text>Plant Tracer</Text>
+        <Entypo name="flower" size={30} />
+      </View>
+    </SafeAreaProvider>
   );
 }
 
