@@ -49,8 +49,8 @@ export default function App() {
     <View
       style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
       onLayout={onLayoutRootView}>
-      <Text>SplashScreen Demo! 👋</Text>
-      <Entypo name="rocket" size={30} />
+      <Text>Plant Tracer</Text>
+      <Entypo name="flower" size={30} />
     </View>
   );
 }
