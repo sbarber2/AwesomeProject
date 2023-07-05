@@ -1,2 +1,2 @@
 # AwesomeProject
-Test project for Expo/React Native
+Plant Tracer client application
